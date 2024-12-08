@@ -27,24 +27,24 @@ Bar Graph: Display the frequency of incident types as a bar chart.
 Custom Line Chart: Show frequency trends of incidents over time or categories.
 
 `How to install`
-pip install pipenv
+```bash pip install pipenv
 
-pipenv install flask
-pipenv install pandas
-pipenv install matplotlib
-pipenv install plotly
-pipenv install scikit-learn
-pipenv install pypdf
-pipenv install werkzeug
-
+```bash pipenv install flask```
+```bash pipenv install pandas```
+```bash pipenv install matplotlib```
+```bash pipenv install plotly```
+```bash pipenv install scikit-learn```
+```bash pipenv install pypdf```
+```bash pipenv install werkzeug```
+```bash pipenv install pytest```
 ## How to run 
 To execute the project , navigate to the project directory 
 
 ## 1. `To output a page use command` 
-     pipenv run python main.py
+     ```bash pipenv run python main.py```
 
 ## 2. `Running test cases` 
-    pipenv run python -m pytest 
+   ```bash pipenv run python -m pytest ```
 
 ## Project Workflow Description
 The Norman PD Incident Visualization project is designed to process police incident data from NormanPD-style reports and provide interactive visualizations. Here is an explanation of how each part of the project functions:

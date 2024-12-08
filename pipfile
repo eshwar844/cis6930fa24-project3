@@ -12,6 +12,7 @@ scikit-learn = "*"
 pypdf = "*"
 werkzeug = "*"
 pytest = "*"
+reportlab = "*"
 
 [requires]
 python_version = "3.9"

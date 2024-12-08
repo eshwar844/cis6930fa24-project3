@@ -1,5 +1,4 @@
 import pytest
-import main
 from main import app, createdb, populatedb
 import os
 from reportlab.pdfgen import canvas
