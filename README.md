@@ -167,7 +167,7 @@ Inserts structured records into the incidents table.
 Output: None (populates the database).
 Expected Use: Converts raw incident strings into structured records in the database.
 
-# 6. `fetch_incidents()`
+## 6. `fetch_incidents()`
 Purpose: Retrieves all stored incident data from the database.
 Input: None.
 How It Works:
@@ -177,7 +177,7 @@ Output: A pandas DataFrame containing all incident records.
 Expected Use: Provides structured incident data for visualization or reporting.
 
 `Flask Routes`
-# 7. `/upload`
+## 7. `/upload`
 Purpose: Handles file uploads from users.
 Input:
 Uploaded PDF files containing incident data.
@@ -188,7 +188,7 @@ Calls createdb() and populatedb() to store the extracted data in the database.
 Output: Returns a JSON response indicating the number of files processed.
 Expected Use: Allows users to upload incident reports for analysis.
 
-# 8. `/process_url`
+## 8. `/process_url`
 Purpose: Processes URLs pointing to incident PDFs.
 Input:
 A list of URLs provided in the request body (JSON or form data).
@@ -199,7 +199,7 @@ Populates the database using createdb() and populatedb().
 Output: Returns a JSON response indicating the number of URLs processed.
 Expected Use: Allows users to process remotely hosted incident reports.
 
-# 9. `/visualize/<viz_type>`
+## 9. `/visualize/<viz_type>`
 Purpose: Provides different visualizations based on the requested type.
 Input:
 viz_type: A string indicating the visualization type (clustering, bargraph, or custom).
@@ -263,27 +263,27 @@ The Roboto font, imported from Google Fonts, for clean and readable typography.
 Vivid colors like gold and orange to highlight important elements such as headings, buttons, and links.
 Subtle hover effects and shadows to make the interface interactive and engaging.
 `Functionality of Each Section`
-# 1. `Header Section`
+## 1. `Header Section`
 The header prominently displays the application's title, "Norman PD Incident Visualization," in large gold text. This sets the context for the user immediately upon landing on the page. The styling ensures the title is eye-catching, with a text shadow adding depth.
 
-# 2. `Feedback Section`
+## 2. `Feedback Section`
 The feedback section dynamically displays messages to users based on their actions. For example:
 
 If a user successfully uploads a file, a success message (e.g., "File uploaded successfully!") is shown in yellow.
 If an error occurs, such as uploading an invalid file type, an error message (e.g., "Invalid file format!") is displayed in red. This feedback is generated using Flask's backend and ensures that users are always aware of the application's response to their actions.
-# 3. `File Upload Section`
+## 3. `File Upload Section`
 This section allows users to upload PDF files directly from their devices. It supports multiple file uploads at once, making it convenient for processing large datasets. Users simply select the files and click the "Upload PDFs" button. The uploaded files are sent to the server for processing, and feedback is provided after the operation.
 
-# 4. `URL Processing Section`
+## 4. `URL Processing Section`
 For users who have incident reports stored online, this section enables them to input one or more URLs pointing to PDF files. The textarea provides clear instructions on how to format the input (e.g., comma-separated URLs). After submitting the form, the URLs are processed on the server, and the extracted data is handled similarly to uploaded files. This option provides flexibility for users working with remote datasets.
 
-# 5. `Visualization Navigation`
+## 5. `Visualization Navigation`
 This section acts as a gateway to the application's visualization features. It presents three distinct links:
 
 Clustering Visualization: Groups incidents by similarity and displays patterns in the data.
 Bar Graph Visualization: Shows a frequency distribution of different incident types.
 Time Series Visualization: Highlights trends over time. These links guide users directly to the visualization pages, making it easy to explore the processed data in multiple formats.
-# 6. `Visualization Display Section`
+## 6. `Visualization Display Section`
 At the bottom of the page, a dedicated area serves as a placeholder for visual outputs. This section is visually distinct with a dark background and rounded edges, ensuring that it stands out from the rest of the page. Users can view the generated visualizations in this area, allowing for a seamless transition from interaction to analysis.
 
 `User Interaction Workflow`
