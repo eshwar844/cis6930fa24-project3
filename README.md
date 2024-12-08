@@ -5,7 +5,7 @@ Name : Venkata Sai Eshwar Idupulapati
 
 This project, part of the CIS 6930 course, focuses on building an interactive web interface for visualizing and analyzing incident data collected from the Norman Police Department. Users can upload NormanPD-style incident PDFs or provide URLs for processing. The system extracts data, stores it in a database, and provides three distinct visualizations: clustering of incident types, a bar graph of incident frequencies, and a custom line chart. This project demonstrates the final stages of a data pipeline, emphasizing user interaction and statistical insights.
 
-##video link: 
+##video link: https://youtu.be/BvV0wYR9NDk
 
 ## Assignment Objectives
 ## Data Extraction:
@@ -28,24 +28,47 @@ Bar Graph: Display the frequency of incident types as a bar chart.
 Custom Line Chart: Show frequency trends of incidents over time or categories.
 
 `How to install`
-``` bash pip install pipenv ```
+``` bash
+pip install pipenv
+```
 
-```bash pipenv install flask```
-```bash pipenv install pandas```
-```bash pipenv install matplotlib```
-```bash pipenv install plotly```
-```bash pipenv install scikit-learn```
-```bash pipenv install pypdf```
-```bash pipenv install werkzeug```
-```bash pipenv install pytest```
+```bash
+pipenv install flask
+```
+```bash
+pipenv install pandas
+```
+```bash
+pipenv install matplotlib
+```
+```bash 
+pipenv install plotly
+```
+```bash 
+pipenv install scikit-learn
+```
+```bash 
+pipenv install pypdf
+```
+```bash
+pipenv install werkzeug
+```
+```bash
+pipenv install pytest
+```
 ## How to run 
 To execute the project , navigate to the project directory 
 
 ## 1. `To output a page use command` 
-     ```bash pipenv run python main.py```
+
+     ```bash
+     pipenv run python main.py
+    ```
 
 ## 2. `Running test cases` 
-   ```bash pipenv run python -m pytest ```
+   ```bash
+   pipenv run python -m pytest
+```
 
 ## Project Workflow Description
 The Norman PD Incident Visualization project is designed to process police incident data from NormanPD-style reports and provide interactive visualizations. Here is an explanation of how each part of the project functions:
