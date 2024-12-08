@@ -60,10 +60,10 @@ pipenv install pytest
 To execute the project , navigate to the project directory 
 
 ## 1. `To output a page use command` 
+```bash
+pipenv run python main.py
+```
 
-     ```bash
-     pipenv run python main.py
-    ```
 
 ## 2. `Running test cases` 
    ```bash
