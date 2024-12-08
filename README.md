@@ -5,6 +5,7 @@ Name : Venkata Sai Eshwar Idupulapati
 
 This project, part of the CIS 6930 course, focuses on building an interactive web interface for visualizing and analyzing incident data collected from the Norman Police Department. Users can upload NormanPD-style incident PDFs or provide URLs for processing. The system extracts data, stores it in a database, and provides three distinct visualizations: clustering of incident types, a bar graph of incident frequencies, and a custom line chart. This project demonstrates the final stages of a data pipeline, emphasizing user interaction and statistical insights.
 
+##video link: 
 
 ## Assignment Objectives
 ## Data Extraction:
@@ -27,7 +28,7 @@ Bar Graph: Display the frequency of incident types as a bar chart.
 Custom Line Chart: Show frequency trends of incidents over time or categories.
 
 `How to install`
-```bash pip install pipenv
+```bash pip install pipenv```
 
 ```bash pipenv install flask```
 ```bash pipenv install pandas```
